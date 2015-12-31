@@ -2,6 +2,15 @@ Docker Deluge-Web
 ==========================
 
 This is a Dockerfile to set up deluge-web with an OpenVPN client attached
+through PrivateInternetAccess.com_.
+
+I've made several changes to @firecat53's original file, including removing
+pipework_, which also led me to rewrite pia_deluge_monitor in bash.
+
+Original Upstream README
+==========================
+
+This is a Dockerfile to set up deluge-web with an OpenVPN client attached
 through PrivateInternetAccess.com_ and managed with pia_deluge_monitor You need
 to have a network bridge (br0) already setup on the host, because pipework_ is
 used to establish the connection so the container can have it's own IP address
